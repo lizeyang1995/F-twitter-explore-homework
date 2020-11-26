@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: $header-padding-y $header-padding-x;
+  border-bottom: solid 1px $border-color;
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .login {
+    @extend .button-style;
+    @include button-color($body-bg, $primary-color);
+  }
+  .register {
+    @extend .button-style;
+    @include button-color($primary-color, $white);
+    margin-left: 5px;
+  }
+}
