@@ -7,13 +7,15 @@
     display: flex;
     align-items: center;
   }
-  .login {
-    @extend .button-style;
-    @include button-color($body-bg, $primary-color);
-  }
-  .register {
-    @extend .button-style;
-    @include button-color($primary-color, $white);
-    margin-left: 5px;
-  }
+}
+
+.login {
+  @extend .button-style;
+  @include button-color($body-bg, $primary-color);
+}
+
+.register {
+  @extend .button-style;
+  @include button-color($primary-color, $white);
+  margin-left: 5px;
 }
